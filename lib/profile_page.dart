@@ -180,16 +180,16 @@ class LogoutButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.symmetric(horizontal: 100),
-        width: gWidth,
-        height: gHeight / 15,
+        margin: EdgeInsets.symmetric(horizontal: 50),
+        width: 200,
+        height: 50,
         child: ElevatedButton(
           onPressed: () {
           TokenService.removeToken();
           },
           child: Text(
             "Cerrar Sesión",
-            style: TextStyle(fontSize: 25, color: Colors.white),
+            style: TextStyle(fontSize: 15, color: Colors.white),
           ),
           style: ButtonStyle(
               shape: MaterialStateProperty.all(

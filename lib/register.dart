@@ -35,9 +35,9 @@ class RegisterScreen extends StatelessWidget {
             height: gHeight,
             child: Column(
               children: [
-                SizedBox(height: 50),
+                SizedBox(height: 30),
                 TopImage(),
-                SizedBox(height: 20),
+                SizedBox(height: 10),
                 UsernameTextFiled(registerController: registerController),
                 SizedBox(height: 20),
                 EmailTextFiled(registerController: registerController),
@@ -134,16 +134,16 @@ class RegisterButton extends StatelessWidget {
     return FadeInDown(
       delay: Duration(milliseconds: 150),
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 100),
-        width: gWidth,
-        height: gHeight / 15,
+        margin: EdgeInsets.symmetric(horizontal: 50),
+        width: 200,
+        height: 50,
         child: ElevatedButton(
           onPressed: () {
             registerController.register(context);
           },
           child: Text(
             "Registrarse",
-            style: TextStyle(fontSize: 25, color: Colors.white),
+            style: TextStyle(fontSize: 15, color: Colors.white),
           ),
           style: ButtonStyle(
               shape: MaterialStateProperty.all(

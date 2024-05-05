@@ -41,7 +41,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
             color: Color(0xFFFFFCEA),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 140, vertical: 8),
+            padding: EdgeInsets.symmetric(horizontal: 100, vertical: 8),
             child: GNav(
               rippleColor: Color(0xFFFFFCEA),
               gap: 4,
